@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="350.0" prefWidth="149.0" style="-fx-background-color: #5b94f0;">
+         <children>
+            <Label layoutX="14.0" layoutY="51.0" text="Učenik:" />
+            <Label fx:id="labelImeIPrezime" layoutX="14.0" layoutY="79.0" text="Ime i prezime učenika" />
+            <Label layoutX="14.0" layoutY="108.0" text="Razred:" />
+            <Label fx:id="labelNazivRazreda" layoutX="14.0" layoutY="134.0" text="Naziv razreda" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="159.0" layoutY="51.0" text="Ocjena" />
+      <RadioButton fx:id="radioButton1" layoutX="157.0" layoutY="80.0" mnemonicParsing="false" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioButton2" layoutX="195.0" layoutY="80.0" mnemonicParsing="false" text="2" toggleGroup="$group" />
+      <RadioButton fx:id="radioButton3" layoutX="239.0" layoutY="80.0" mnemonicParsing="false" text="3" toggleGroup="$group" />
+      <RadioButton fx:id="radioButton4" layoutX="278.0" layoutY="80.0" mnemonicParsing="false" text="4" toggleGroup="$group" />
+      <RadioButton fx:id="radioButton5" layoutX="319.0" layoutY="80.0" mnemonicParsing="false" text="5" toggleGroup="$group" />
+      <Label layoutX="159.0" layoutY="117.0" text="Datum" />
+      <DatePicker fx:id="datumPicker" layoutX="159.0" layoutY="144.0" />
+      <Label layoutX="157.0" layoutY="184.0" text="Komentar" />
+      <TextArea fx:id="areaKomentar" layoutX="159.0" layoutY="210.0" prefHeight="72.0" prefWidth="174.0" />
+      <Button fx:id="btnUnesiOcjenu" layoutX="333.0" layoutY="302.0" mnemonicParsing="false" onAction="#actionUnesiOcjenu" text="Unesi ocjenu" />
+      <Button fx:id="btnOdustani" layoutX="253.0" layoutY="302.0" mnemonicParsing="false" onAction="#actionOdustani" text="Odustani" />
+   </children>
+</AnchorPane>
